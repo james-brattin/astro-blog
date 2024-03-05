@@ -9,24 +9,26 @@ const identity = {
   hobbies: ["playing drums", "skateboarding", "geography"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "Angular", "Astro", "Svelte"];
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Angular",
+  "Astro",
+  "Svelte",
+  "C#",
+];
 
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
-const skillColor = "navy";
+const skillColor = "lightblue";
 const fontWeight = "bold";
-const textCase = "uppercase";
 ---
 
-<BaseLayout
-  pageTitle={pageTitle}
-  skillColor={skillColor}
-  fontWeight={fontWeight}
-  textCase={textCase}
->
-  <style define:vars={{ skillColor, fontWeight, textCase }}>
+<BaseLayout pageTitle={pageTitle}>
+  <style define:vars={{ skillColor, fontWeight }}>
     h1 {
       color: purple;
       font-size: 4rem;
@@ -34,7 +36,6 @@ const textCase = "uppercase";
     .skill {
       color: var(--skillColor);
       font-weight: var(--fontWeight);
-      text-transform: var(--textCase);
     }
   </style>
   <h2>My name is James Brattin.</h2>
