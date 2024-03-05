@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogPost from "../../components/BlogPost.astro";
 
-export async function getStaticPaths() {
+export async function getStaticPaths(): Promise<any[]> {
   const allPosts = await Astro.glob("../posts/*.md");
 
   const uniqueTags = [
